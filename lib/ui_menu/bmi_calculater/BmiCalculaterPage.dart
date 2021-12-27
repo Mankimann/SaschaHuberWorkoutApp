@@ -42,7 +42,9 @@ class _BmiCalculaterPageState extends State<BmiCalculaterPage> {
               children: [
 
                 RoundButtonWidget(color: kAppBarColor, content: const Icon(FontAwesomeIcons.male, size: 64,color: Colors.indigo,),
-                    isTapped: () {}, text: const Text("Male")),
+                    isTapped: () {setState(() {
+                      print("Hello Test");
+                    });}, text: const Text("Male")),
 
                 RoundButtonWidget(color: kAppBarColor, content: const Icon(FontAwesomeIcons.female, size: 64,color: Colors.deepPurple,),
                     isTapped: () {}, text: const Text("Female")),
