@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
-class WeekCalenderWidget extends StatefulWidget {
-  const WeekCalenderWidget({Key key}) : super(key: key);
+class WeekCalenderWidget extends StatelessWidget {
+   WeekCalenderWidget({Key key}) : super(key: key);
 
-  @override
-  WeekCalenderWidgetState createState() {
-    return WeekCalenderWidgetState();
-  }
-}
 
-class WeekCalenderWidgetState extends State<WeekCalenderWidget> {
   CalendarController controller = CalendarController();
 
   var arr = new List(7);
@@ -68,4 +62,3 @@ class WeekCalenderWidgetState extends State<WeekCalenderWidget> {
     return Container(padding: const EdgeInsets.all(2), child: Text('${date.day}'));
   }
 }
-
