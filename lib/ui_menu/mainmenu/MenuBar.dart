@@ -1,6 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:sascha_huber_workout_app/ui_menu/bmi_calculater/BmiCalculaterPage.dart';
+import 'package:sascha_huber_workout_app/ui_menu/bmi_calculater/BmiCalculatorPage.dart';
 import 'package:sascha_huber_workout_app/ui_toolbox/constants.dart';
 
 class MenuBar extends StatefulWidget {
@@ -39,7 +39,7 @@ class _MenuBarState extends State<MenuBar> {
               print ("BMI Calculater \n Hello World");
               print(today);
               Navigator.push(context, MaterialPageRoute(builder: (context)
-              => const BmiCalculaterPage()));
+              => const BmiCalculatorPage()));
             }
         }
         );
