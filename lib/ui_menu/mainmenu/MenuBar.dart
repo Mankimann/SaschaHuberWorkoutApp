@@ -1,6 +1,5 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:sascha_huber_workout_app/ui_components/WeekCalenderWidget.dart';
 import 'package:sascha_huber_workout_app/ui_menu/bmi_calculater/BmiCalculaterPage.dart';
 import 'package:sascha_huber_workout_app/ui_toolbox/constants.dart';
 
@@ -19,6 +18,8 @@ class _MenuBarState extends State<MenuBar> {
   @override
   Widget build(BuildContext context) {
 
+    DateTime today = DateTime.now();
+
       final items = <Widget>[
       const Icon(Icons.home, size: 30),
       const Icon(Icons.account_circle_rounded, size: 30),
@@ -34,18 +35,12 @@ class _MenuBarState extends State<MenuBar> {
     onTap: (index) {
       setState(() {
         _page = index;
-
-        if(_page == 3) {
-          print("/Person");
-          Navigator.push(context, MaterialPageRoute(builder:  (context)
-          => const WeekCalenderWidget()));
-        }
-        if(_page == 2) {
-          print ("BMI Calculater");
-          Navigator.push(context, MaterialPageRoute(builder: (context)
-          => const BmiCalculaterPage()));
+            if(_page == 2) {
+              print ("BMI Calculater \n Hello World");
+              print(today);
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => const BmiCalculaterPage()));
             }
-
         }
         );
     },

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sascha_huber_workout_app/ui_components/WeekCalenderWidget.dart';
 import 'package:sascha_huber_workout_app/ui_menu/bmi_calculater/BmiCalculaterPage.dart';
 import 'package:sascha_huber_workout_app/ui_menu/mainmenu/MainMenuPage.dart';
 import 'package:sascha_huber_workout_app/ui_toolbox/constants.dart';
@@ -22,8 +21,7 @@ class WorkoutApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/bmi_calculater': (context) => const BmiCalculaterPage(),
-        '/menu_page': (context) => const MainMenuPage(),
-        '/person': (context) => const WeekCalenderWidget()
+        '/menu_page': (context) => const MainMenuPage()
       },
 
 
